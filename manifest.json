@@ -1,0 +1,27 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/assetsmanager/assetsmanager.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/game/game.js",
+		"libs/promise/promise.js",
+		"libs/sdk/sdk.js",
+		"libs/decoder/decoder.js",
+		"libs/dragonBones/dragonBones.js"
+	],
+	"game": [
+		"bin-debug/view/base/LoginBaseView.js",
+		"bin-debug/view/LoginServerView.js",
+		"bin-debug/manager/LoginManager.js",
+		"bin-debug/view/base/Loader.js",
+		"bin-debug/data/LoginData.js",
+		"bin-debug/view/cell/SelectServerListCell.js",
+		"bin-debug/data/ResourceConfig.js",
+		"bin-debug/view/LoginView.js",
+		"bin-debug/view/NoticeView.js",
+		"bin-debug/view/ServerListView.js",
+		"bin-debug/view/ShellLoading.js",
+		"bin-debug/Shell.js"
+	]
+}

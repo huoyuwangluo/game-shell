@@ -1,0 +1,30 @@
+<e:Skin xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  width="640" height="1136" class="skin.LoginServerViewSkin">
+	<e:Image horizontalCenter="0" source="img_loding_jpg" width="729" height="1294" verticalCenter="0"/>
+	<e:Image y="849" horizontalCenter="0" source="img_selet_sever_back_png"/>
+
+	<e:Label id="labSeverName" text="无" y="854" size="20" horizontalCenter="0" textColor="0xc6cbd9" width="350" textAlign="center" height="40" verticalAlign="middle"/>
+
+	<e:Button id="bntEnter" label="" y="949" anchorOffsetX="105" anchorOffsetY="33" horizontalCenter="0.5"  width="205" height="62">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_login_enter_png" source.down="btn_login_enter_png" source.disabled="btn_login_enter_png"/>
+			<e:Label id="labelDisplay" verticalAlign="middle" textAlign="center" size="20" width="100%" height="38" verticalCenter="-2" horizontalCenter="0" horizontalCenter.up="0" verticalCenter.up="-2" size.up="22" stroke.up="1" verticalCenter.down="-2" stroke.down="1" size.down="22" textColor.down="0xf7dca5" strokeColor.down="0x480302" horizontalCenter.down="0" textColor="0xfcd67d" textColor.up="0x907450" textColor.disabled="0x66523d"/>
+			</e:Skin>
+		</e:skinName>
+
+	</e:Button>
+
+	<e:Button id="btnNotice" label="" anchorOffsetX="31" anchorOffsetY="33" x="79" y="110">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">   
+			<e:Image alpha.disabled="0.5" width="100%" height="100%" source="btn_gonggao_png" source.up="btn_gonggao_png" source.down="btn_gonggao_png" source.disabled="btn_gonggao_png"/>
+			<e:Label id="labelDisplay" verticalAlign="middle" textAlign="center" size="20" width="100%" height="38" verticalCenter="-2" horizontalCenter="0" horizontalCenter.up="0" verticalCenter.up="-2" size.up="22" stroke.up="1" verticalCenter.down="-2" stroke.down="1" size.down="22" textColor.down="0xf7dca5" strokeColor.down="0x480302" horizontalCenter.down="0" textColor="0xfcd67d" textColor.up="0x907450" textColor.disabled="0x66523d"/>
+			<e:Image id="iconDisplay" top="0" left="0" includeIn="up,down" source="img_warn_png" visible="false"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label id="labBanSu" text="" y="1100" anchorOffsetX="0" width="600" size="16" lineSpacing="10" horizontalCenter="0" textColor="0x5e5e5e"/>
+
+	<e:Image id="btnChange" source="img_xiaobiao2_png" x="500" y="855"/>
+	<e:Image source="logo_sanguo_png" x="428" y="55" scaleX="0.6" scaleY="0.6"/>
+</e:Skin>

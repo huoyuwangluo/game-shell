@@ -1,0 +1,6 @@
+<e:Skin width="400" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" class="skin.ShellLoadingSkin">
+	<e:Image id="logo" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="bar" width="214" anchorOffsetX="0" source="img_lodingProgressSmallBg_png" scale9Grid="4,0,19,9" horizontalCenter="0" verticalCenter="136"/>
+	<e:Image id="progress" width="210" anchorOffsetX="0" anchorOffsetY="0" source="img_lodingSmallProgress_png" scale9Grid="2,0,8,3" verticalCenter="136.5" x="95"/>
+	<e:Label id="tip" text="AA" size="14" horizontalCenter="0" width="355" textAlign="center" strokeColor="0x000000" stroke="2" textColor="0xbfbdbd" verticalCenter="124"/>
+</e:Skin>

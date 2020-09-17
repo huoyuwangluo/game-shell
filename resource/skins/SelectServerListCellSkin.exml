@@ -1,0 +1,6 @@
+<e:Skin class="skin.SelectServerListCellSkin" width="273" height="64" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="btnStatus" source="create_btn_yellow_png" scale9Grid="3,3,25,23" anchorOffsetX="0" width="272" anchorOffsetY="0" height="65"/>
+	<e:Label id="labelName" verticalAlign="middle" textAlign="center" size="18" width="224" height="38" verticalCenter="0" horizontalCenter="12.5" text="" anchorOffsetX="0" textColor="0xd3d3d3"/>
+	<e:Image id="imgState" source="img_login_hot_png" x="7" y="24"/>
+	<e:Image id="imgLay" source="img_login_lay_png" x="7" y="24"/>
+</e:Skin>

@@ -1,0 +1,415 @@
+{
+	"groups": [
+		{
+			"keys": "logo_sanguo_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down2_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up2_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled2_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down2_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up2_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect2_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected2_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border2_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header2_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb2_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb2_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled2_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down2_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up2_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect2_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb2_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb2_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb2_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track2_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight2_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle2_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off2_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on2_png"
+		},
+		{
+			"url": "logo/logo_sanguo.png",
+			"type": "image",
+			"name": "logo_sanguo_png"
+		},
+		{
+			"url": "ui/btn_close.png",
+			"type": "image",
+			"name": "btn_close_png"
+		},
+		{
+			"url": "ui/btn_gonggao.png",
+			"type": "image",
+			"name": "btn_gonggao_png"
+		},
+		{
+			"url": "ui/btn_login_enter.png",
+			"type": "image",
+			"name": "btn_login_enter_png"
+		},
+		{
+			"url": "ui/btn_red.png",
+			"type": "image",
+			"name": "btn_red_png"
+		},
+		{
+			"url": "ui/closetip.png",
+			"type": "image",
+			"name": "closetip_png"
+		},
+		{
+			"url": "ui/create_btn_red_down.png",
+			"type": "image",
+			"name": "create_btn_red_down_png"
+		},
+		{
+			"url": "ui/create_btn_red_up.png",
+			"type": "image",
+			"name": "create_btn_red_up_png"
+		},
+		{
+			"url": "ui/create_btn_yellow.png",
+			"type": "image",
+			"name": "create_btn_yellow_png"
+		},
+		{
+			"url": "ui/create_img_title.png",
+			"type": "image",
+			"name": "create_img_title_png"
+		},
+		{
+			"url": "ui/img_create_list_back.png",
+			"type": "image",
+			"name": "img_create_list_back_png"
+		},
+		{
+			"url": "ui/img_loading_black.png",
+			"type": "image",
+			"name": "img_loading_black_png"
+		},
+		{
+			"url": "ui/img_loding.jpg",
+			"type": "image",
+			"name": "img_loding_jpg"
+		},
+		{
+			"url": "ui/img_lodingProgress.png",
+			"type": "image",
+			"name": "img_lodingProgress_png"
+		},
+		{
+			"url": "ui/img_lodingProgressBg.png",
+			"type": "image",
+			"name": "img_lodingProgressBg_png"
+		},
+		{
+			"url": "ui/img_lodingProgressSmallBg.png",
+			"type": "image",
+			"name": "img_lodingProgressSmallBg_png"
+		},
+		{
+			"url": "ui/img_lodingSmallProgress.png",
+			"type": "image",
+			"name": "img_lodingSmallProgress_png"
+		},
+		{
+			"url": "ui/img_login_hot.png",
+			"type": "image",
+			"name": "img_login_hot_png"
+		},
+		{
+			"url": "ui/img_login_lay.png",
+			"type": "image",
+			"name": "img_login_lay_png"
+		},
+		{
+			"url": "ui/img_login_new.png",
+			"type": "image",
+			"name": "img_login_new_png"
+		},
+		{
+			"url": "ui/img_login_normal.png",
+			"type": "image",
+			"name": "img_login_normal_png"
+		},
+		{
+			"url": "ui/img_login_notice.png",
+			"type": "image",
+			"name": "img_login_notice_png"
+		},
+		{
+			"url": "ui/img_login_stayopen.png",
+			"type": "image",
+			"name": "img_login_stayopen_png"
+		},
+		{
+			"url": "ui/img_offlin_bg.png",
+			"type": "image",
+			"name": "img_offlin_bg_png"
+		},
+		{
+			"url": "ui/img_selet_sever_back.png",
+			"type": "image",
+			"name": "img_selet_sever_back_png"
+		},
+		{
+			"url": "ui/img_warn.png",
+			"type": "image",
+			"name": "img_warn_png"
+		},
+		{
+			"url": "ui/img_xiaobiao.png",
+			"type": "image",
+			"name": "img_xiaobiao_png"
+		},
+		{
+			"url": "ui/img_xiaobiao2.png",
+			"type": "image",
+			"name": "img_xiaobiao2_png"
+		},
+		{
+			"url": "animation/zhaoyun_ui_tex.png",
+			"type": "image",
+			"name": "zhaoyun_ui_tex_png"
+		},
+		{
+			"url": "animation/zhaoyun_ui_ske.json",
+			"type": "json",
+			"name": "zhaoyun_ui_ske_json"
+		},
+		{
+			"url": "animation/zhaoyun_ui_tex.json",
+			"type": "json",
+			"name": "zhaoyun_ui_tex_json"
+		},
+		{
+			"url": "ui/img_grayBg.png",
+			"type": "image",
+			"name": "img_grayBg_png"
+		},
+		{
+			"url": "ui/img_loding1.jpg",
+			"type": "image",
+			"name": "img_loding1_jpg"
+		},
+		{
+			"url": "ui/img_loding_bg.jpg",
+			"type": "image",
+			"name": "img_loding_bg_jpg"
+		},
+		{
+			"url": "ui/img_loding_bg3.png",
+			"type": "image",
+			"name": "img_loding_bg3_png"
+		}
+	]
+}

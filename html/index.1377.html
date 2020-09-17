@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>魔域来了</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main" style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+         data-entry-class="Shell"
+         data-orientation="auto"
+         data-scale-mode="fixedNarrow"
+         data-frame-rate="60"
+         data-content-width="600"
+         data-content-height="1080"
+         data-show-paint-rect="false"
+         data-multi-fingered="2"
+         data-show-fps="false" data-show-log="false"
+         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+    </div>
+<script>
+    var config={
+        sdk:'1377',//sdk类型
+        logo:'logo_moyulaile',//默认logo
+        ip:'login2.myh5.90wmoyu.com',//服务器地址
+        platform:'platform_1377',//服务器平台类型
+		release:true,
+        debug:false,//是否为调试模式,调试模式下强制version为空
+        logenabled:false,//是否打印日志
+        cmd:false,//是否可以打开命令工具
+        ssl:false,//是否采用加密连接
+        noticepop:true,//公告是否自动弹出
+        scriptloadtype:'js',//脚本加载类型 js zlib
+        configloadtype:'amf',//配置加载类型 json zlib
+        vershell:'3.2',//Shell的版本控制
+        version:'',//预留版本控制参数，无需填写
+        version_notice:'1.1',//资源公告部分版本控制
+        version_assets:'3.2',//资源总体版本控制
+        version_assetscript:'2.7',//资源代码部分版本控制
+    }
+</script>
+<script src='shell/md5.js'></script>
+<script src='shell/sit.js?3.6'></script>
+</body>
+
+</html>

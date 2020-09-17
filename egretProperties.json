@@ -1,0 +1,47 @@
+{
+	"engineVersion": "5.2.29",
+	"compilerVersion": "5.2.29",
+	"template": {},
+	"target": {
+		"current": "web"
+	},
+	"eui": {
+		"exmlRoot": [
+			"resource/skins"
+		],
+		"themes": [
+			"resource/default.thm.json"
+		],
+		"exmlPublishPolicy": "web"
+	},
+	"modules": [
+		{
+			"name": "egret"
+		},
+		{
+			"name": "assetsmanager"
+		},
+		{
+			"name": "eui"
+		},
+		{
+			"name": "game"
+		},
+		{
+			"name": "promise",
+			"path": "libs/promise"
+		},
+		{
+			"name": "sdk",
+			"path": "libs/sdk"
+		},
+		{
+			"name": "decoder",
+			"path": "libs/decoder"
+		},
+		{
+			"name": "dragonBones",
+			"path": "libs/dragonBones"
+		}
+	]
+}

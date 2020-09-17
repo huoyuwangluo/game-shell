@@ -1,0 +1,26 @@
+<e:Skin xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="570" height="646" class="skin.ServerListViewSkin">
+	<e:Image height="94%" y="0" horizontalCenter="0"  anchorOffsetX="0" width="560" source="img_offlin_bg_png" scale9Grid="79,73,329,18"/>
+	<e:Image source="img_create_list_back_png" x="261" y="61" width="288" height="510" scale9Grid="4,4,4,4"/>
+	<e:Image source="img_create_list_back_png" x="32" y="61" width="214" height="510" scale9Grid="4,4,4,4"/>
+	<e:Scroller width="195" height="495" x="42" y="68">
+		<e:List id="listSection">
+		<e:itemRendererSkinName>
+		<e:Skin states="up,down,disabled">
+				<e:Image alpha.disabled="0.5" source="create_btn_red_up_png" source.down="create_btn_red_down_png"/>
+				<e:Label id="labelDisplay" verticalAlign="middle" textAlign="center" size="18" height="38" verticalCenter="-2" horizontalCenter="0" size.up="18" stroke.up="1" stroke.down="1" size.down="18" strokeColor.down="0x480302" text="{data}" width="100%" textColor="0xd3d3d3" textColor.up="0xd3d3d3" textColor.down="0xd3d3d3"/>
+			</e:Skin>
+		</e:itemRendererSkinName>
+		<e:layout>
+			<e:VerticalLayout gap="6"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Scroller width="273" height="492" y="68" x="267">
+			<e:List id="listSever" scaleX="1" scaleY="1">
+				<e:layout>
+					<e:VerticalLayout gap="6"/>
+				</e:layout>
+			</e:List>
+	</e:Scroller>
+	<e:Image id="imgEmty" source="closetip_png" y="623" anchorOffsetX="143" anchorOffsetY="14" horizontalCenter="0"/>
+</e:Skin>
