@@ -1,1 +1,1 @@
-node ./cmd/compiler ../client_sg
+node compiler client_sg_wx

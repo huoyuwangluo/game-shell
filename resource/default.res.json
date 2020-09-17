@@ -400,16 +400,6 @@
 			"url": "ui/img_loding1.jpg",
 			"type": "image",
 			"name": "img_loding1_jpg"
-		},
-		{
-			"url": "ui/img_loding_bg.jpg",
-			"type": "image",
-			"name": "img_loding_bg_jpg"
-		},
-		{
-			"url": "ui/img_loding_bg3.png",
-			"type": "image",
-			"name": "img_loding_bg3_png"
 		}
 	]
 }

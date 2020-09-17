@@ -286,7 +286,7 @@ window.onload = function () {
          **/
         //todo...需要根据不同手机设备设置声音类型
         var isIOS = egret.Capabilities.os == 'iOS' || egret.Capabilities.os == 'Mac OS';
-        document.querySelectorAll(".egret-player")[0].setAttribute('data-entry-class', "Shell");
+        document.querySelectorAll(".egret-player")[0].setAttribute('data-entry-class', "shell.Shell");
         egret.runEgret({
             renderMode: "webgl", audioType: 0, calculateCanvasScaleFactor: function (context) {
                 var backingStore = context.backingStorePixelRatio ||

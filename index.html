@@ -24,7 +24,7 @@
 
 <body>
     <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
-         data-entry-class="Shell"
+         data-entry-class="shell.Shell"
          data-orientation="auto"
          data-scale-mode="fixedNarrow"
          data-frame-rate="60"
@@ -103,18 +103,7 @@
 <script>
     window.onload=function(){
         loadManifestScript(this,function(){
-            platform.enable(config.sdk,this,function(){
-                //所有代码加载完毕,准备初始化EGRET上下文
-                /**
-                 * {
-                 * "renderMode":, //Engine rendering mode, "canvas" or "webgl"
-                 * "audioType": 0 //Use the audio type, 0: default, 2: web audio, 3: audio
-                 * "antialias": //Whether the anti-aliasing is enabled in WebGL mode, true: on, false: off, defaults to false
-                 * "calculateCanvasScaleFactor": //a function return canvas scale factor
-                 * }
-                 **/
-                //todo...需要根据不同手机设备设置声音类型
-                egret.runEgret({ renderMode: "webgl", audioType: 0, calculateCanvasScaleFactor:function(context) {
+            egret.runEgret({ renderMode: "webgl", audioType: 0, calculateCanvasScaleFactor:function(context) {
                     var backingStore = context.backingStorePixelRatio ||
                         context.webkitBackingStorePixelRatio ||
                         context.mozBackingStorePixelRatio ||
@@ -123,7 +112,6 @@
                         context.backingStorePixelRatio || 1;
                     return (window.devicePixelRatio || 1) / backingStore;
                 }});
-            });
         })
 	}
 </script>

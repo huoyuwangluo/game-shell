@@ -11,22 +11,8 @@
         "types": []
     },
     "include": [
+        "src",
         "libs"
-        
-    ],
-    "files":[
-        "./src/data/LoginData.ts",
-        "./src/data/ResourceConfig.ts",
-        "./src/manager/LoginManager.ts",
-        "./src/view/base/Loader.ts",
-        "./src/view/base/LoginBaseView.ts",
-        "./src/view/cell/SelectServerListCell.ts",
-        "./src/view/LoginServerView.ts",
-        "./src/view/LoginView.ts",
-        "./src/view/NoticeView.ts",
-        "./src/view/ServerListView.ts",
-        "./src/view/ShellLoading.ts",
-        "./src/Shell.ts"
     ],
     "exclude": [
         "shell"

@@ -33,7 +33,7 @@ module shell {
 		}
 
 		public logLoading(roleId: string, step: number, total: number = 0) {
-			if (roleId == "" || roleId == undefined) return;
+			if(roleId == "" || roleId == undefined) return;
 			var logStr: string = this.getLogLoadingURL() + "?roleId=" + roleId + "&step=" + step + "&total=" + total;
 			new HttpRequest().request(logStr, null, null);
 		}
@@ -45,7 +45,7 @@ module shell {
 				(new HttpRequest()).request(this.getAuthURL() + "?" + this.getURLParam('login', platform.sdk ? platform.sdk.type : "", roleId), this, function (data: any) {
 					this._authData = data;
 					this._serverList = new ServerList(this._account.toString());
-					if (method) method.call(caller, data);
+					if(method) method.call(caller, data);
 					reslove(data);
 				});
 			})
@@ -60,13 +60,26 @@ module shell {
 			});
 		}
 
+
 		/**获取服务器列表**/
 		public async requestServerList(roleId: string, caller?: any, method?: Function) {
 			return new Promise((reslove, reject) => {
 				(new HttpRequest()).request(`${(window as any).config.ssl ? 'https' : 'http'}://${(window as any).config.ip}/${(window as any).config.platform}/getServerInfo.php?roleId=${roleId}&platform_type=${platform.sdk ? platform.sdk.type : ""}&channel=${platform.sdk ? platform.sdk.channleId : ''}&r=${egret.getTimer()}`, this, function (data: any) {
+					if (platform.sdk.shareServerId != '' && data.newRole == 1)
+					{
+						for (var serverData of data.serversList) {
+							if(serverData.id == platform.sdk.shareServerId)
+							{
+								this._serverList.selected = new ServerItem(serverData);
+								if(method) method.call(caller, true);
+								reslove(true);
+								return;
+							}
+						}
+					}
 					if (!(window as any).config.debug && !(window as any).config.superstart && data.newRole == 1) {
 						this._serverList.selected = new ServerItem(data.serversList[0]);
-						if (method) method.call(caller, true);
+						if(method) method.call(caller, true);
 						reslove(true);
 						return;
 					}
@@ -114,7 +127,7 @@ module shell {
 					}
 					this._serverList.selected = historyGroup.list[0];
 					this._isRequestServerList = true;
-					if (method) method.call(caller, false);
+					if(method) method.call(caller, false);
 					reslove(false);
 				}, egret.URLRequestMethod.GET);
 			})
@@ -157,50 +170,6 @@ module shell {
 				0,
 				0,
 				parseInt(((new Date()).getTime() / 1000).toFixed(0)), "", "", -1, -1, 0);
-		}
-	}
-
-	export class HttpRequest extends egret.URLLoader {
-		private _url: string;
-		private _completeCaller: any;
-		private _completeMethod: Function;
-		constructor() {
-			super();
-		}
-
-		public request(url: string, caller: any, method: Function, requestMethod: string = egret.URLRequestMethod.POST, data: any = null) {
-			this._url = url;
-			this._completeCaller = caller;
-			this._completeMethod = method;
-			this.dataFormat = egret.URLLoaderDataFormat.TEXT;
-
-			var urlRequest: egret.URLRequest = new egret.URLRequest(url);
-			urlRequest.method = requestMethod;
-			if (data) {
-				var str: string = "";
-				for (var key in data) {
-					str += (key + '=' + data[key] + '&');
-				}
-				var variables: egret.URLVariables = new egret.URLVariables(str);
-				urlRequest.data = variables;
-			}
-			this.addEventListener(egret.Event.COMPLETE, this.onLoadComplete, this);
-			this.addEventListener(egret.IOErrorEvent.IO_ERROR, this.onLoadError, this);
-			this.load(urlRequest);
-		}
-
-		private onLoadComplete(e: egret.Event) {
-			this.removeEventListener(egret.Event.COMPLETE, this.onLoadComplete, this);
-			this.removeEventListener(egret.IOErrorEvent.IO_ERROR, this.onLoadError, this);
-			if (!this._completeMethod) return;
-			this._completeMethod.call(this._completeCaller, JSON.parse(this.data))
-			this._completeMethod = this._completeCaller = null;
-		}
-
-		private onLoadError(e: egret.IOErrorEvent) {
-			this.removeEventListener(egret.Event.COMPLETE, this.onLoadComplete, this);
-			this.removeEventListener(egret.IOErrorEvent.IO_ERROR, this.onLoadError, this);
-			egret.error("Http错误:", this._url);
 		}
 	}
 
